@@ -45,7 +45,7 @@ public class Main {
         personsMap.put(1969,person5);
         personsMap.put(1970,person4);
 
-        System.out.println("Количество элементов коллекции Map= " + personsMap.size());
+        System.out.println("Количество элементов коллекции Map = " + personsMap.size());
         for (Map.Entry<Integer, Person> entry : personsMap.entrySet()) {
             System.out.println("Ключ: " + entry.getKey() +"Ключ: "+ entry.getValue());
         }
