@@ -13,7 +13,7 @@ public final class Person {
     @Override
     public boolean equals(Object obj) {
 
-        if (!(this.hashCode() == obj.hashCode())) {
+        if (this.hashCode() != obj.hashCode()) {
             return false;
         }
 
@@ -27,7 +27,7 @@ public final class Person {
 
         Person person = (Person) obj;
 
-        return firstName == person.firstName && lastName == person.lastName;
+        return firstName.equals(person.firstName) && lastName.equals(person.lastName);
     }
 
 
